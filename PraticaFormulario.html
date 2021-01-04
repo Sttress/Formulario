@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário - Pratica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="cliente.js"></script>
+</head>
+<body onload="listarClientes()">
+	<div id="container">
+		<form>
+			<fieldset>
+				<legend>Formulário</legend>
+				<div id="formulario">
+					<input type="text" name="nome" id="nome" placeholder="Digite o seu nome aqui...">
+					<input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF aqui...">
+					<input type="text" name="rg" id="rg" placeholder="Digite o seu RG aqui...">
+					<input type="text" name="dt_nascimento" id="dt_nascimento" placeholder="Digite a sua data de nascimento..." >
+					<input type="text" name="fone" id="fone" placeholder="Digite aqui um número valido para contato...">
+					<input type="text" name="email" id="email" placeholder="Digite aqui um e-mail válido para contato...">
+					<button type="button" onclick="cadastroCliente()">Cadastrar</button>
+					<button type="button" onclick="pesquisarClientes()">Pesquisar</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<table id="tabelaClientes">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>CPF</th>
+				<th>Rg</th>
+				<th>Data de Nascimento</th>
+				<th>Fone</th>
+				<th>E-mail</th>
+				<th></th>
+			</tr>
+			<br>
+			<tbody id="campoListaClientes">
+				
+			</tbody>
+		</thead>
+	</table>
+</body>
+</html>
